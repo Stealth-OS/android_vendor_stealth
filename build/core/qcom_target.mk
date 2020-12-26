@@ -20,9 +20,9 @@ $(call set-device-specific-path,DATA_IPA_CFG_MGR,data-ipa-cfg-mgr,vendor/qcom/op
 $(call set-device-specific-path,DATASERVICES,dataservices,vendor/qcom/opensource/dataservices)
 $(call set-device-specific-path,THERMAL,thermal,hardware/qcom-caf/thermal)
 $(call set-device-specific-path,VR,vr,hardware/qcom-caf/vr)
-$(call set-device-specific-path,WLAN,wlan,hardware/qcom-caf/wlan)
 
 PRODUCT_CFI_INCLUDE_PATHS += \
     hardware/qcom-caf/wlan/qcwcn/wpa_supplicant_8_lib
 
 endif
+$(call set-device-specific-path,WLAN,wlan,hardware/qcom-caf/wlan)

@@ -1,7 +1,7 @@
 #
 # Copyright (C) 2018-2019 The Pixel3ROM Project
 # Copyright (C) 2020 Raphielscape LLC. and Haruka LLC.
-# Copyright (C) 2020 StormbreakerOSS
+# Copyright (C) 2020 StealthOSS
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,18 +15,18 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-PLATFORM_STORMBREAKER_RELEASE := Bifrost
-PLATFORM_STORMBREAKER_VERSION := $(PLATFORM_STORMBREAKER_RELEASE).$(shell date +%m%d%H%M)
+PLATFORM_STEALTH_RELEASE := 1.0 Alpha
+PLATFORM_STEALTH_VERSION := $(PLATFORM_STEALTH_RELEASE).$(shell date +%m%d%H%M)
 
-TARGET_PRODUCT_SHORT := $(subst stormbreaker_,,$(TARGET_DEVICE))
+TARGET_PRODUCT_SHORT := $(subst stealth_,,$(TARGET_DEVICE))
 
 ifeq ($(TARGET_BUILD_VARIANT),OFFICIAL)
-    PLATFORM_STORMBREAKER_VERSION := $(PLATFORM_STORMBREAKER_RELEASE)
-    PROD_VERSION += StormbreakerOS-$(PLATFORM_STORMBREAKER_RELEASE)-$(TARGET_DEVICE)-$(shell date +%m%d%H%M)-OFFICIAL
+    PLATFORM_STEALTH_VERSION := $(PLATFORM_STEALTH_RELEASE)
+    PROD_VERSION += StealthOS-$(PLATFORM_STEALTH_RELEASE)-$(TARGET_DEVICE)-$(shell date +%m%d%H%M)-OFFICIAL
 else
-    PLATFORM_STORMBREAKER_VERSION := $(PLATFORM_STORMBREAKER_RELEASE)
-    PROD_VERSION += StormbreakerOS-$(PLATFORM_STORMBREAKER_RELEASE)-$(TARGET_DEVICE)-$(shell date +%m%d%H%M)-UNOFFICIAL
+    PLATFORM_STEALTH_VERSION := $(PLATFORM_STEALTH_RELEASE)
+    PROD_VERSION += StealthOS-$(PLATFORM_STEALTH_RELEASE)-$(TARGET_DEVICE)-$(shell date +%m%d%H%M)-UNOFFICIAL
 endif
 
 PRODUCT_PRODUCT_PROPERTIES += \
-    ro.system.stormbreaker.version=$(PLATFORM_STORMBREAKER_VERSION)
+    ro.system.stealth.version=$(PLATFORM_STEALTH_VERSION)
