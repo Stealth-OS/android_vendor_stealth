@@ -18,4 +18,4 @@
 $(call inherit-product, vendor/stealth/config/versioning.mk)
 
 # Inherit from our kernel/header generator
-$(call inherit-product, vendor/stealth/config/BoardConfigStorm.mk)
+$(call inherit-product, vendor/stealth/config/BoardConfigStealth.mk)
