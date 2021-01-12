@@ -30,3 +30,5 @@ endif
 
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.system.stealth.version=$(PLATFORM_STEALTH_VERSION)
+
+STEALTH_VERSION := StealthOS11
