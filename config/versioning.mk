@@ -15,8 +15,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-PLATFORM_STEALTH_RELEASE := 1.0 Alpha
-PLATFORM_STEALTH_VERSION := $(PLATFORM_STEALTH_RELEASE).$(shell date +%m%d%H%M)
+PLATFORM_STEALTH_RELEASE := StealthOS 1.0
+STEALTH_VERSION := $(PLATFORM_STEALTH_RELEASE).$(shell date +%m%d%H%M)
 
 TARGET_PRODUCT_SHORT := $(subst stealth_,,$(TARGET_DEVICE))
 
@@ -31,4 +31,4 @@ endif
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.system.stealth.version=$(PLATFORM_STEALTH_VERSION)
 
-STEALTH_VERSION := StealthOS11
+

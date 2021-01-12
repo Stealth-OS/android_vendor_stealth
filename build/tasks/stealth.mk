@@ -15,7 +15,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-
+PROD_VERSION := StealthOS-1.0
 TARGET_FILES_PACKAGE := $(PRODUCT_OUT)/$(PROD_VERSION).zip
 
 .PHONY: stealth
